@@ -1,0 +1,19 @@
+Enter into example folder
+
+cd example/fentry
+
+runc command ip a (to check available network interface )
+
+inside example/fentry run command ./fentry wlp113s0(wlp113s0 is my wireless network interface may be differ in other system)
+
+output : (May differ system to system)
+root@master-node:/home/a0480/Documents/All EBPF/ebpf/examples/fentry# ./fentry 
+2023/02/13 14:02:54 Comm             Src addr        Port   -> Dest addr       Port  
+2023/02/13 14:02:57 code 192.168.29.90   42548  -> 40.79.141.153   443   
+2023/02/13 14:02:57 Tracing(tcp_connect)#5 192.168.29.90   42548  -> 40.79.141.153   443   
+2023/02/13 14:03:39 code 192.168.29.90   34034  -> 51.104.15.252   443   
+2023/02/13 14:03:39 Tracing(tcp_connect)#5 192.168.29.90   34034  -> 51.104.15.252   443   
+2023/02/13 14:03:55 code 192.168.29.90   34036  -> 51.104.15.252   443   
+2023/02/13 14:03:55 Tracing(tcp_connect)#5 192.168.29.90   34036  -> 51.104.15.252
+
+
